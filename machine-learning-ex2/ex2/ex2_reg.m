@@ -119,8 +119,8 @@ options = optimset('GradObj', 'on', 'MaxIter', 400);
 % Plot Boundary
 plotDecisionBoundary(theta, X, y);
 hold on;
-title(sprintf('lambda = %g', lambda))
-
+title(sprintf('lambda = %g and theta is :', lambda))
+theta
 % Set regularization parameter lambda to 0 (you should vary this)
 lambda = 0;
 
@@ -134,7 +134,8 @@ options = optimset('GradObj', 'on', 'MaxIter', 400);
 % Plot Boundary
 plotDecisionBoundary(theta, X, y);
 hold on;
-title(sprintf('lambda = %g', lambda))
+title(sprintf('lambda = %g and theta is :', lambda))
+theta
 
 % Set regularization parameter lambda to 100 (you should vary this)
 lambda = 100;
