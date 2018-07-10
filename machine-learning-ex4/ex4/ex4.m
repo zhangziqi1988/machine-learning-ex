@@ -33,6 +33,8 @@ num_labels = 10;          % 10 labels, from 1 to 10
 fprintf('Loading and Visualizing Data ...\n')
 
 load('ex4data1.mat');
+n=4000;
+X=X(1:n,:);
 m = size(X, 1);
 
 % Randomly select 100 data points to display
@@ -183,10 +185,10 @@ fprintf('\nTraining Neural Network... \n')
 
 %  After you have completed the assignment, change the MaxIter to a larger
 %  value to see how more training helps.
-options = optimset('MaxIter', 100);
+options = optimset('MaxIter', 50);
 
 %  You should also try different values of lambda
-lambda = 0;
+lambda = 1;
 
 % Create "short hand" for the cost function to be minimized
 costFunction = @(p) nnCostFunction(p, ...
@@ -226,9 +228,10 @@ pause;
 %  the labels. You will now implement the "predict" function to use the
 %  neural network to predict the labels of the training set. This lets
 %  you compute the training set accuracy.
-
+load('ex4data1.mat');
+X=X(n+1:end,:);
 pred = predict(Theta1, Theta2, X);
 
-fprintf('\nTraining Set Accuracy: %f\n', mean(double(pred == y)) * 100);
+fprintf('\nTraining Set Accuracy: %f\n', mean(double(pred == y(n+1:end))) * 100);
 
 
