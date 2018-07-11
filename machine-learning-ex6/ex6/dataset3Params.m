@@ -25,8 +25,8 @@ sigma = 0.3;
 
 param = [C sigma];
 error_init = 1;
-x1 = [1 2 1];
-x2 = [0 4 -1];
+x1 = [0 1 0];
+x2 = [0 -1 0];
 x1 = x1(:);
 x2 = x2(:);
 t = [0.01,0.03,0.1,0.3,1,3,10,30];
@@ -46,8 +46,8 @@ for i = 1:l
 
 end
 
-C = param(1);
-sigma = param(2);
+C = param(1)
+sigma = param(2)
 
 
 
