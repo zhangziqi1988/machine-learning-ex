@@ -54,7 +54,6 @@ fprintf('\n==== Processed Email ====\n\n');
 % Process file
 l = 0;
 
-email_contents;
 
 while ~isempty(email_contents)
 
