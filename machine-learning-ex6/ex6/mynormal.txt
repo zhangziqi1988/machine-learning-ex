@@ -1,0 +1,17 @@
+Dear Customer:
+
+Thanks so much for taking the time to share your network plans and discussing the ways in which Arista can take your business to the next level. 
+
+We are excited to share the 2017 Gartner Magic Quadrant for Data Center Networking. This is the third consecutive year Arista is being recognized as a leader.
+
+We believe our increased positioning in the ¡°Leaders¡± quadrant by Gartner, based on ability to execute and completeness of vision, is validation of continued market acceptance of Arista EOS and our Universal Cloud Architecture. Our innovations in cloud management, telemetry and containerized EOS (cEOS) are changing the way customers build cloud-scale networks.
+
+We look forward to speaking with you soon.
+
+Sincerely,
+
+Arista Networks
+
+Gartner does not endorse any vendor, product or service depicted in its research publications, and does not advise technology users to select only those vendors with the highest ratings or other designation. Gartner research publications consist of the opinions of Gartner's research organization and should not be construed as statements of fact. Gartner disclaims all warranties, expressed or implied, with respect to this research, including any warranties of merchantability or fitness for a particular purpose.
+
+Gartner, Magic Quadrant for Data Center Networking, Danilo Ciscato, Mark Fabbi and Andrew Lerner, 3 July 2017.

@@ -1,5 +1,5 @@
 %% Machine Learning Online Class
-%  Exercise 6 | Spam Classification with SVMs
+%  Exercise 6 | Support Vector Machines
 %
 %  Instructions
 %  ------------
@@ -19,23 +19,43 @@
 %% Initialization
 clear ; close all; clc
 
-%% ==================== Part 1: Email Preprocessing ====================
-%  To use an SVM to classify emails into Spam v.s. Non-Spam, you first need
-%  to convert each email into a vector of features. In this part, you will
-%  implement the preprocessing steps for each email. You should
-%  complete the code in processEmail.m to produce a word indices vector
-%  for a given email.
+%% =============== Part 1: Loading and Visualizing Data ================
+%  We start the exercise by first loading and visualizing the dataset. 
+%  The following code will load the dataset into your environment and plot
+%  the data.
+%
 
-fprintf('\nPreprocessing sample email (emailSample1.txt)\n');
+fprintf('Loading and Visualizing Data ...\n')
 
-% Extract Features
-file_contents = readFile('emailSample1.txt');
-word_indices  = processEmail(file_contents);
+% Load from ex6data1: 
+% You will have X, y in your environment
+load('ex6data1.mat');
 
-% Print Stats
-fprintf('Word Indices: \n');
-fprintf(' %d', word_indices);
-fprintf('\n\n');
+% Plot training data
+%plotData(X, y);
+
+fprintf('Program paused. Press enter to continue.\n');
+pause;
+
+%% ==================== Part 2: Training Linear SVM ====================
+%  The following code will train a linear SVM on the dataset and plot the
+%  decision boundary learned.
+%
+
+% Load from ex6data1: 
+% You will have X, y in your environment
+load('ex6data1.mat');
+
+fprintf('\nTraining Linear SVM ...\n')
+
+% You should try to change the C value below and see how the decision
+% boundary varies (e.g., try C = 1000)
+C = 1;
+%model = svmTrain(X, y, C, @linearKernel, 1e-3, 20);
+fprintf('svmTrain model is .\n');
+load('svmmodel.mat');
+
+visualizeBoundaryLinear(X, y, model);
 
 fprintf('Program paused. Press enter to continue.\n');
 pause;
